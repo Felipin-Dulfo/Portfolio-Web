@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html> <!-- 16px -->
+
+  <head>
+    <meta charset="UTF-8">
+    <title>BSCS student perception survey questions about the teacher</title>
+    <link rel="stylesheet" href="survey-form.css">
+  </head>
+
+  <body>
+
+<!-- header -->
+    <header>
+      <h1 id="title">BSCS student perception survey questions about the teacher</h1>
+      <p id="description">Your cooperation is much appriciated.</p>
+    </header>
+
+<!-- form element -->
+    <form id="survey-form">
+
+      <fieldset>
+<!-- Name attribute -->
+        <label for="name" id="name-label"> Enter Full Name: 
+          <input id="name" name="full-name" type="text" placeholder="Your full name" required/>
+        </label>
+
+<!-- Drop down select number 1 -->
+        <label for="dropdown" for="dropdown2"> Enter Year & Section: 
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Freshmen</option>
+            <option value="2">Sophomore</option>
+            <option value="3">Juniors</option>
+            <option value="4">Seniors</option>
+          </select>
+
+          <select id="dropdown2" name="dropdown2">
+            <option value="">(select one)</option>
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+          </select>
+        </label>
+
+<!-- Age type Number  -->
+        <label for="number" id="number-label">Age:
+          <input id="number" name="Age" type="number" min="6" max="1000" placeholder="Your age" required/>
+        </label>
+
+<!-- Email -->
+         <label for="email" id="email-label">Email:
+           <input id="email" name="email-label" type="email" placeholder="Your email" required/> 
+         </label>
+
+      </fieldset>
+
+<!-- Teacher name -->
+      <fieldset>
+        <label for="teacher"> Enter the full name of the teacher: 
+          <input id="teacher" name="teacher-name" type="text" placeholder="Teacher name" required/>
+        </label>
+
+<!-- Teacher ratings -->
+        <label for="ratings"> On a scale of 0-10, please rate your teacher: <input id="ratings" name="teacher-ratings" type="number" min="0" max="10" placeholder="Rating" required/>
+        </label>
+
+
+<!-- Radio buttons number 1 -->
+        <label>Does your teacher encourage you to perform better?
+          <label for="yes">
+            <input id="yes" type="radio" name="teacher-encouragement" value="yes" class="inline"/>
+            Yes, all the time
+          </label>
+
+          <label for="sometimes"> 
+            <input id="sometimes" type="radio" name="teacher-encouragement" value="sometimes" class="inline"/>
+            Only sometimes
+          </label>
+
+          <label for="none"> 
+            <input id="none" type="radio" name="teacher-encouragement" value="none" class="inline"/>
+            No, not at all
+          </label>
+        </label>
+
+<!-- Drop down select number 2 -->
+        <label for="equality">Please share your agreement with this statement: “My teacher has fair rules for the class and is extremely impartial.”
+        <select id="equality" name="equality">
+          <option value="">(select one)</option>
+          <option value="1">Strongly Agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+
+        </label>
+
+<!-- Radio buttons number 2 -->
+        <label> After each test, does your teacher help you in understanding ways to improve your grades?
+           <label for="yes"> 
+            <input id="yes" type="radio" name="teacher-help" value="yes" class="inline"/>Yes
+          </label>
+
+          <label for="maybe"> 
+            <input id="maybe" type="radio" name="teacher-help" value="maybe" class="inline"/>Maybe
+          </label>
+
+          <label for="no"> 
+            <input id="no" type="radio" name="teacher-help" value="no" class="inline"/>No
+          </label>
+        </label>
+
+<!-- Checkboxes -->
+        <label>What are some achievements you’re proud of?
+          <label><input type="checkbox" id="1" value="1" class="inline">Securing the 1st ranking the 1st rank
+          </label>
+
+          <label for="2">
+            <input type="checkbox" id="2" value="2" class="inline"/>
+            Participating in an inter-school competition
+          </label>
+
+          <label for="3">
+            <input type="checkbox" id="3" value="3" class="inline"></input>
+            Representing the school/university at a national level
+            <label for="textAns">
+              Others:
+              <textarea id="textAns" name="texttAns" placeholder="e.g, Student athlete, student publication writer, etc...."></textarea>
+            </label>
+          </label>
+        </label>
+
+      </fieldset>
+      <fieldset>
+        <label for="evaluate">  How would you evaluate the overall academic experience you had with this professor in our university program?
+          <textarea id="evaluate" name="evaluate" placeholder="Please be concise with your answer...."></textarea>
+        </label>
+
+        <label for="together">Upload a picture with your teacher (if any):
+          <input id="together" type="file" name="file"/>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="submit"/>
+    </form>
+    
+  </body>
+</html>
