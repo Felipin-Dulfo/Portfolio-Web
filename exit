@@ -1,0 +1,26 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex a399b36..4102066 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -48,7 +48,7 @@[m
+         <h1 class="section__title section__title--intro">[m
+             Hi, I am <strong>Felipin Dulfo</strong>[m
+         </h1>[m
+[31m-        <p class="section__subtitle section__subtitle--intro">computer science student</p>[m
+[32m+[m[32m        <p class="section__subtitle section__subtitle--intro">Computer Science Student</p>[m
+         <img src="img\3DSCF2746.JPG" alt="a picture of Jane Smith smiling" class="intro__img">[m
+     </section>[m
+ [m
+[1mdiff --git a/style.css b/style.css[m
+[1mindex b08a4fa..25e9ec1 100644[m
+[1m--- a/style.css[m
+[1m+++ b/style.css[m
+[36m@@ -316,7 +316,7 @@[m [mheader{[m
+ [m
+ .my-services {[m
+     background-color: var(--clr-dark);[m
+[31m-    background-image: url(../img/services-bg.jpg);[m
+[32m+[m[32m    background-image: url(img/services-bg.jpg);[m
+     background-size: cover;[m
+     /* background-blend-mode: multiply; */[m
+     color: var(--clr-light);[m
